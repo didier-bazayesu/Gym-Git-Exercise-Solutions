@@ -632,3 +632,6 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/didier-bazayesu/Gym-Git-Exercise-Solutions.git
    3b7c96c..d7209e1  ft/team-page -> ft/team-page
 PS C:\Users\user\Documents\Gym Git Exercise Solutions> 
+
+# Bundle 3 - Exercise 2
+
