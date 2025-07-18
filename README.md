@@ -819,4 +819,4 @@ branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
 PS C:\Users\user\Documents\Gym Git Exercise Solutions> 
 
 
-# Bundle 4 - exercise 1
+# Bundle 4 - exercise 
