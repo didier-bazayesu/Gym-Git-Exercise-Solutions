@@ -693,3 +693,127 @@ PS C:\Users\user\Documents\Gym Git Exercise Solutions> git status
 On branch ft/home-page-redesign
 nothing to commit, working tree clean
 PS C:\Users\user\Documents\Gym Git Exercise Solutions> 
+
+git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/service-redesign
+  ft/team-page
+* main
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git checkout ft/faq-page
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+* ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+  main
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git checkout main
+M       README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.       
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git status
+On branch main
+Your branch is up to date with 'origin/main'.       
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git add .\README.md
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git commit -m "adding line for Bundle 3 q2"
+[main d924bd0] adding line for Bundle 3 q2
+ 1 file changed, 4 insertions(+), 1 deletion(-)     
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 342 bytes | 342.00 KiB/s, done.
+   132e04a..d924bd0  main -> main
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git checkout  ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+PS ^C\Users\user\Documents\Gym Git Exercise Solutions>
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git status
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> 
+ *  History restored 
+
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> 
+ *  History restored 
+
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+* ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+  main
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git add .\team.html .\README.md
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git commit "feat : adding change on home page"
+error: pathspec 'feat : adding change on home page' did not match any file(s) known to git
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git add .\home.html
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git add .\README.md
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git commit -m "feat: adding change on home page"
+[ft/home-page-redesign e19697d] feat: adding change on home page
+ 2 files changed, 61 insertions(+)
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git branch         
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+* ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+  main
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git push -u ft/hom-page-redesign
+fatal: 'ft/hom-page-redesign' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git push -u origin  ft/hom-page-redesign
+error: src refspec ft/hom-page-redesign does not match any
+error: failed to push some refs to 'https://github.com/didier-bazayesu/Gym-Git-Exercise-Solutions.git'
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+* ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+  main
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git push -u origin  ft/home-page-redesign
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.02 KiB | 1.02 MiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/didier-bazayesu/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/didier-bazayesu/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> 
