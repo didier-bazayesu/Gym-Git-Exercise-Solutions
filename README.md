@@ -908,4 +908,78 @@ PS C:\Users\user\Documents\Gym Git Exercise Solutions> git branch
 
   # Bundle 4 exercise 2
 
-  
+     0675ee6..356b78f  main -> main
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git add .
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git commit -m "feat: first footer changes"
+[ft/footer 6143a2b] feat: first footer changes
+ 1 file changed, 14 insertions(+)
+ create mode 100644 footer.html
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git push -u origin ft/footer
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 454 bytes | 227.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/didier-bazayesu/Gym-Git-Exercise-Solutions/pull/new/ft/footer
+remote:
+To https://github.com/didier-bazayesu/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.       
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/footer
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+* main
+:
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/footer
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+* main
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git merge --squash ft/footer
+Updating 356b78f..6143a2b
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+ create mode 100644 footer.html
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git commit -m "footer changes squashing"
+[ft/squashing 0b8638a] footer changes squashing
+ 1 file changed, 14 insertions(+)
+ create mode 100644 footer.html
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git push -u origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 454 bytes | 454.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:      https://github.com/didier-bazayesu/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/didier-bazayesu/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+PS C:\Users\user\Documents\Gym Git Exercise Solutions>
+
+
+
+# Bundle 5 exercises 1
