@@ -635,3 +635,61 @@ PS C:\Users\user\Documents\Gym Git Exercise Solutions>
 
 # Bundle 3 - Exercise 2
 
+s> git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/service-redesign
+  ft/team-page
+* main
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git checkout ft/faq-page
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+* ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+  main
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git checkout main
+M       README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.       
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git status
+On branch main
+Your branch is up to date with 'origin/main'.       
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git add .\README.md
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git commit -m "adding line for Bundle 3 q2"
+[main d924bd0] adding line for Bundle 3 q2
+ 1 file changed, 4 insertions(+), 1 deletion(-)     
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 342 bytes | 342.00 KiB/s, done.
+   132e04a..d924bd0  main -> main
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git checkout  ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+PS ^C\Users\user\Documents\Gym Git Exercise Solutions>
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git status
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> 
