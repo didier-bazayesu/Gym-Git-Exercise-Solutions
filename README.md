@@ -819,4 +819,93 @@ branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
 PS C:\Users\user\Documents\Gym Git Exercise Solutions> 
 
 
-# Bundle 4 - exercise 
+# Bundle 4 - exercise 1
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+* ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+  main
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git checkout main
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git status
+On branch ft/home-page-redesign
+Your branch is up to date with 'origin/ft/home-page-redesign'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git add .\README.md
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git commit -m "feat:adding new line"
+[ft/home-page-redesign 790260a] feat:adding new line
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git push origin ft/home-page-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 336 bytes | 336.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/didier-bazayesu/Gym-Git-Exercise-Solutions.git
+   152f187..790260a  ft/home-page-redesign -> ft/home-page-redesign
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> remote
+remote : The term 'remote' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path 
+was included, verify that the path is correct and try again.
+At line:1 char:1
++ remote
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (remote:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git remote
+origin
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git remote add git-copy https://github.com/didier-bazayesu/git-clone-exercises.git
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> 
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git remote
+git-copy
+origin
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git add .\home.html
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git commit -m "feat: adding changes on home page"
+[main a956afe] feat: adding changes on home page
+ 1 file changed, 4 insertions(+)
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 354 bytes | 177.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/didier-bazayesu/Gym-Git-Exercise-Solutions.git
+   d924bd0..a956afe  main -> main
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git push git-copy
+Enumerating objects: 35, done.
+Counting objects: 100% (35/35), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (31/31), done.
+Writing objects: 100% (35/35), 10.99 KiB | 937.00 KiB/s, done.
+Total 35 (delta 15), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (15/15), done.
+To https://github.com/didier-bazayesu/git-clone-exercises.git
+ * [new branch]      main -> main
+PS C:\Users\user\Documents\Gym Git Exercise Solutions> git branch
+  dev
+  ft/bundle-2
+
+
+  # Bundle 4 exercise 2
+
+  
